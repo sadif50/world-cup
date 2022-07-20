@@ -1,0 +1,288 @@
+/* -------------------------
+    Import Google Fonts
+--------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* ------------------------
+    GLOBAL STYLES 
+--------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+}
+
+.container {
+    width: 85%;
+}
+
+.flex-justify-center {
+    display: flex;
+    justify-content: center;
+}
+
+/* -------------------------
+    Top Banner Styles 
+----------------------------*/
+.banner-box {
+    margin-top: 50px;
+    padding: 2rem 5rem 0 5rem;
+    border-radius: 30px;
+    background-color: #161616;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-text {
+    width: 47%;
+    padding-top: 4.5rem;
+}
+
+.banner-text h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.banner-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.btn-link {
+    display: inline-block;
+    color: #fff;
+    background-color: #2b66d9;
+    padding: 16px 25px;
+    border-radius: 5px;
+    border: 1px solid #2b66d9;
+    transition: 0.3s linear;
+}
+
+.btn-link:hover {
+    background-color: #fff;
+    color: #2b66d9;
+}
+
+.banner-img {
+    width: 50%;
+}
+
+.banner-img img {
+    position: relative;
+    bottom: -6px;
+}
+
+/* -----------------------
+    Blog Styles
+-------------------------- */
+.blog-box {
+    display: flex;
+    justify-content: space-between;
+    margin: 130px 0;
+}
+
+.sidebar {
+    width: 252px;
+    max-width: 312px;
+    height: 252px;
+    background-color: #161616;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    border-radius: 10px;
+}
+
+.sidebar a {
+    padding: 17px 39px;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 500;
+    background-color: #fff;
+    color: #161616;
+    border-radius: 10px;
+    width: calc(100% - 60px);
+    text-align: center;
+}
+
+.sidebar .active {
+    background-color: #2b66d9;
+    color: #fff;
+}
+
+.blogs {
+    width: calc(100% - 330px);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.blog {
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+}
+
+.blog-details {
+    padding: 20px;
+}
+
+.blog-btn {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #161616;
+    border: 1px solid #161616;
+    padding: 4px 16px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.blog-details h3 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.blog-info {
+    color: rgba(22, 22, 22, 0.7);
+}
+
+.blog-info span {
+    margin-right: 30px;
+}
+
+/* ---------------------------
+    Footer Styles
+---------------------------- */
+.footer {
+    background-color: #161616;
+    padding: 130px 0;
+}
+
+.footer-box h2 {
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.footer-hr {
+    margin: 50px 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-links {
+    text-align: center;
+}
+
+.footer-links li {
+    display: inline-block;
+}
+
+.footer-links li a {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #b9b9b9;
+    margin: 0 20px;
+}
+
+.social-links {
+    text-align: center;
+}
+
+.social-links li {
+    display: inline-block;
+}
+
+.social-links li a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #293242;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 500;
+    color: #fff;
+    margin: 31px 10px 0 10px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+/* ---------------------------
+    Upcomming Match Styles 
+------------------------------ */
+.matches {
+    width: calc(100% - 330px);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.match {
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+    padding: 53px 30px;
+    height: fit-content;
+}
+
+.flag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flag img {
+    width: 5rem;
+}
+
+.flag span {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+.match-details {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.match-details h3 {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 600;
+    color: #161616;
+    margin-bottom: 10px;
+}
+
+.match-details p {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #4d4d4d;
+}
