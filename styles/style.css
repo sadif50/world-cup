@@ -44,7 +44,7 @@ body {
     margin-top: 50px;
     padding: 32px 80px 0 80px;
     border-radius: 15px;
-    background-color: #161616;
+    background-color: #550065;
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -71,16 +71,16 @@ body {
 .btn-link {
     display: inline-block;
     color: #fff;
-    background-color: #2b66d9;
+    background-color: #ff0049;
     padding: 16px 25px;
     border-radius: 5px;
-    border: 1px solid #2b66d9;
-    transition: 0.3s linear;
+    border: 1px solid #ff0049;
+    transition: 0.5s ease-in-out;
 }
 
 .btn-link:hover {
     background-color: #fff;
-    color: #2b66d9;
+    color: #ff0049;
 }
 
 .banner-img {
@@ -105,7 +105,7 @@ body {
     width: 252px;
     max-width: 312px;
     height: 252px;
-    background-color: #161616;
+    background-color: #550065;
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -124,11 +124,10 @@ body {
     border-radius: 10px;
     width: calc(100% - 78px);
     text-align: center;
-    border: 1px solid #e8e8e8;
 }
 
 .sidebar .active {
-    background-color: #2b66d9;
+    background-color: #ff0049;
     color: #fff;
 }
 
@@ -179,7 +178,7 @@ body {
     Footer Styles
 ---------------------------- */
 .footer {
-    background-color: #161616;
+    background-color: #550065;
     padding: 130px 0;
 }
 
@@ -225,7 +224,7 @@ body {
     display: inline-block;
     width: 40px;
     height: 40px;
-    background-color: #293242;
+    background-color: #ff0049;
     font-size: 20px;
     line-height: 40px;
     font-weight: 500;
@@ -301,12 +300,15 @@ body {
    \\\\\\\\\\\\\\\\\\\\\\\\\\\\
  */
 
-@media screen and (min-width: 577px) and (max-width: 992px) {
+@media screen and (min-width: 689px) and (max-width: 992px) {
+
+    /* Header CSS */
     .banner-text h1 {
         font-size: 4vw;
         margin-bottom: 10px;
     }
 
+    /* This style used for multiline text elipsis */
     .banner-text p {
         font-size: 14px;
         margin-bottom: 15px;
@@ -329,6 +331,7 @@ body {
         padding: 12px 25px;
     }
 
+    /* blog css */
     .blog-box {
         flex-direction: column;
         margin: 70px 0;
@@ -346,6 +349,7 @@ body {
 
     .sidebar a {
         font-size: 14px;
+        border: 1px solid #e8e8e8;
     }
 
     .matches,
@@ -354,6 +358,24 @@ body {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .tablet-btn {
+        display: block;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .tablet-btn a {
+        display: inline-block;
+        padding: 12px 29px;
+        background-color: #ff0049;
+        font-size: 20px;
+        text-align: center;
+        line-height: 24px;
+        color: #fff;
+        border-radius: 5px;
+    }
+
+    /* footer css */
     .footer {
         padding: 70px 0;
     }
@@ -366,23 +388,6 @@ body {
     .footer-hr {
         margin: 30px 0;
     }
-
-    .tablet-btn {
-        display: block;
-        text-align: center;
-        margin-top: 50px;
-    }
-
-    .tablet-btn a {
-        display: inline-block;
-        padding: 12px 29px;
-        background-color: #dd0000;
-        font-size: 20px;
-        text-align: center;
-        line-height: 24px;
-        color: #fff;
-        border-radius: 5px;
-    }
 }
 
 /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -393,7 +398,9 @@ body {
    ////////////////////////////
    \\\\\\\\\\\\\\\\\\\\\\\\\\\\
 */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 688px) {
+
+    /* Header css */
     .banner-box {
         margin-top: 20px;
         padding: 28px 38px 0 38px;
@@ -412,6 +419,7 @@ body {
         margin-bottom: 10px;
     }
 
+    /* This style used for multiline text elipsis */
     .banner-text p {
         font-size: 14px;
         margin-bottom: 15px;
@@ -435,6 +443,7 @@ body {
         width: 100%;
     }
 
+    /* Blog Css */
     .blog-box {
         flex-direction: column;
         margin: 24px 0;
@@ -452,6 +461,7 @@ body {
 
     .sidebar a {
         font-size: 14px;
+        border: 1px solid #e8e8e8;
     }
 
     .matches,
@@ -460,6 +470,7 @@ body {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    /* Footer Css */
     .footer {
         padding: 24px 0;
     }
@@ -484,15 +495,5 @@ body {
 
     .footer-hr {
         margin: 24px 0;
-    }
-
-    .tablet-btn {
-        display: block;
-        text-align: center;
-        margin-top: 50px;
-    }
-
-    .tablet-btn {
-        display: none;
     }
 }
